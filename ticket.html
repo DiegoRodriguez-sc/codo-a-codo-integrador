@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <title>Codo a Codo</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html"
+            ><img src="./assets/codoacodo.png" width="80px" alt="" />Conf Bs
+            As</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav me-auto mb-2 mb-md-0"></div>
+            <div class="d-flex">
+              <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="#myCarousel"
+                    >La conferencia</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./index.html">Los oradores</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./index.html"
+                    >El lugar y la fecha</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./index.html"
+                    >Conviértete en orador</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-success" href="./ticket.html"
+                    >Comparar tickets</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="d-flex justify-content-center" >
+      <div class="containerticket">
+        <div class="mt-5 d-flex flex-wrap w-100 justify-content-center gap-4">
+          <div class="box border border-primary">
+            <h3>Estudiante</h3>
+            <p>Tienen un descuento</p>
+            <h3>80%</h3>
+            <span class="text-muted">*presentar documentación</span>
+          </div>
+          <div class="box border border-success">
+            <h3>Trainee</h3>
+            <p>Tienen un descuento</p>
+            <h3>50%</h3>
+            <span class="text-muted">*presentar documentación</span>
+          </div>
+          <div class="box border border-warning">
+            <h3>Junior</h3>
+            <p>Tienen un descuento</p>
+            <h3>15%</h3>
+            <span class="text-muted">*presentar documentación</span>
+          </div>
+        </div>
+        <div class="text-center">
+          <h1>
+            <span class="h5 fw-light">Venta</span>
+            <br />
+            VALOR DE TICKET $200
+          </h1>
+  
+          <form class="row g-3">
+            <div class="col-md-6 form-floating">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="floatingName"
+                  placeholder="nombre"
+                />
+                <label for="floatingName">Nombre</label>
+            </div>
+            <div class="col-md-6 form-floating">
+              <input
+                  type="text"
+                  class="form-control"
+                  id="floatingLastname"
+                  placeholder="apellido"
+                />
+                <label for="floatingLastname">Apellido</label>
+            </div>
+            <div class="col-12 form-floating">
+              <input
+                  type="email"
+                  class="form-control"
+                  id="floatingEmail"
+                  placeholder="correo"
+                />
+                <label for="floatingEmail">Correo</label>
+            </div>
+            <div class="col-md-6 form-floating">
+              <input
+                  type="number"
+                  class="form-control"
+                  id="floatingCantidad"
+                  placeholder="cantidad"
+                />
+                <label for="floatingCantidad">Cantidad</label>
+            </div>
+            <div class="col-md-6 form-floating">
+              <select class="form-select" >
+                <option selected>Seleccioná una categoria</option>
+                <option value="1">Estudiante</option>
+                <option value="2">Trainee</option>
+                <option value="3">Junior</option>
+              </select>
+            </div>
+            <div class="col-12">
+              <div class="alert alert-primary text-start" role="alert">
+                Total a pagar : $
+              </div>
+            </div>
+            <div class="col-md-6 d-grid">
+              <button type="reset" class="btn btn-success">Borrar</button>
+            </div>
+            <div class="col-md-6 d-grid">
+              <button type="submit" class="btn btn-success">Resumen</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

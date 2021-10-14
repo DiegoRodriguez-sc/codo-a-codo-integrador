@@ -1,0 +1,79 @@
+html {
+  box-sizing: border-box;
+  font-family:sans-serif;
+  font-size: 16px;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+ padding-top: 3rem;
+ padding-bottom: 3rem;
+ color: #5a5a5a;
+ font-size: 10px;
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+.carousel {
+ margin-bottom: 4rem;
+}
+
+.carousel-caption {
+ bottom: 3rem;
+ z-index: 10;
+}
+
+.carousel-item {
+ height: 32rem;
+}
+.carousel-item > img {
+ position: absolute;
+ top: 0;
+ left: 0;
+ min-width: 100%;
+ height: 32rem;
+}
+.buttons{
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+/* oradores */
+
+.oradoresText{
+  font-size: 14px;
+  text-align: start;
+}
+
+/* form */
+.form{
+  max-width: 75%;
+  margin: auto;
+}
+
+.box{
+  width: 250px;
+  padding: 1.5rem 0;
+  text-align: center;
+}
+.containerticket{
+  max-width: 65%;
+}
+
+
+/* responsive */
+@media all and (max-width: 480px) {
+  .containerticket{
+    max-width: 95%;
+  }
+}
+
