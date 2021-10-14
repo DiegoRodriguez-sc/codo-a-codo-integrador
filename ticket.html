@@ -97,65 +97,73 @@
         </div>
         <!-- boxes end -->
         <!-- form -->
-        <div class="text-center">
+        <div class="text-center " >
           <h1>
             <span class="h5 fw-light">Venta</span>
             <br />
             VALOR DE TICKET $200
           </h1>
   
-          <form class="row g-3">
+          <form id="form" class="row g-3 m-auto">
             <div class="col-md-6 form-floating">
                 <input
                   type="text"
+                  name="name"
                   class="form-control"
                   id="floatingName"
                   placeholder="nombre"
+                  required
                 />
                 <label for="floatingName">Nombre</label>
             </div>
             <div class="col-md-6 form-floating">
               <input
                   type="text"
+                  name="lastName"
                   class="form-control"
                   id="floatingLastname"
                   placeholder="apellido"
+                  required
                 />
                 <label for="floatingLastname">Apellido</label>
             </div>
             <div class="col-12 form-floating">
               <input
                   type="email"
+                  name="email"
                   class="form-control"
                   id="floatingEmail"
                   placeholder="correo"
+                  required
                 />
                 <label for="floatingEmail">Correo</label>
             </div>
             <div class="col-md-6 form-floating">
               <input
                   type="number"
+                  name="number"
                   class="form-control"
                   id="floatingCantidad"
                   placeholder="cantidad"
+                  required
                 />
                 <label for="floatingCantidad">Cantidad</label>
             </div>
             <div class="col-md-6 form-floating">
-              <select class="form-select" >
+              <select class="form-select" name="category"  required >
                 <option selected>Seleccioná una categoria</option>
-                <option value="1">Estudiante</option>
-                <option value="2">Trainee</option>
-                <option value="3">Junior</option>
+                <option  value="1">Estudiante</option>
+                <option  value="2">Trainee</option>
+                <option  value="3">Junior</option>
               </select>
             </div>
             <div class="col-12">
               <div class="alert alert-primary text-start" role="alert">
-                Total a pagar : $
+                Total a pagar : $ <span class="text-pagar"></span>
               </div>
             </div>
             <div class="col-md-6 d-grid">
-              <button type="reset" class="btn btn-success">Borrar</button>
+              <button type="reset" id="borrar" class="btn btn-success">Borrar</button>
             </div>
             <div class="col-md-6 d-grid">
               <button type="submit" class="btn btn-success">Resumen</button>
@@ -182,7 +190,7 @@
         </div>
       </div>
   </footer>
-
     <!-- footer end -->
+    <script src="./app.js"></script>
   </body>
 </html>
